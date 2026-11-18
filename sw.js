@@ -2,7 +2,7 @@
 // Service Worker básico con estrategia Cache First (App Shell).
 // Asincronía solo con .then(), .catch() y Promise.all().
 
-const CACHE_STATIC_NAME = 'static-camara-v2';
+const CACHE_STATIC_NAME = 'static-camara-v3';
 const STATIC_FILES = [
   './',
   './index.html',

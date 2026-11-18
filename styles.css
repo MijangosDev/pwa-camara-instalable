@@ -112,11 +112,17 @@ main {
 .aviso-permiso ul { margin: 0.5rem 0; padding-left: 1.2rem; line-height: 1.6; }
 .aviso-permiso .nota { font-size: 0.85rem; color: var(--texto-suave); }
 
-.pie {
-  text-align: center;
-  padding: 1rem 1rem 1.5rem;
-  font-size: 0.85rem;
-  color: var(--texto-suave);
+.titulo {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 0.6rem;
+}
+
+.autor {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--acento);
 }
 
 .aviso-ios { border-color: var(--aviso); }
