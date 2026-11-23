@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspección Visual PWA</title>
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>Inspección Visual</h1>
+    <button id="btn-instalar" type="button" hidden>Instalar App</button>
+  </header>
+
+  <main>
+    <section id="aviso-ios" class="tarjeta aviso" hidden>
+      <p>Para instalar esta app en tu iPhone toca el botón <strong>Compartir</strong> de Safari y elige <strong>Agregar a inicio</strong>.</p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Cámara</h2>
+      <p id="mensaje-estado">La cámara está apagada.</p>
+
+      <video id="visor-camara" autoplay playsinline muted></video>
+
+      <div id="aviso-permiso" class="aviso-permiso" hidden>
+        <h3>Antes de encender la cámara</h3>
+        <p>Esta aplicación requiere acceso a tu cámara únicamente para mostrar una vista previa local en pantalla. Ninguna imagen se envía a servidores externos.</p>
+        <p>Primero se encenderá la cámara trasera, y después puedes cambiar a la frontal.</p>
+        <div class="botones">
+          <button id="btn-confirmar-permiso" type="button">Aceptar y Encender Cámara</button>
+          <button id="btn-cancelar-permiso" type="button" class="secundario">Ahora no</button>
+        </div>
+      </div>
+
+      <div class="botones">
+        <button id="btn-preparar-camara" type="button">Solicitar Acceso a Cámara</button>
+        <button id="btn-alternar-camara" type="button" class="secundario">Cambiar cámara</button>
+        <button id="btn-apagar-camara" type="button" class="secundario">Apagar cámara</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

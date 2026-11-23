@@ -1,0 +1,128 @@
+:root {
+  --fondo: #0f172a;
+  --tarjeta: #1e293b;
+  --texto: #e2e8f0;
+  --suave: #94a3b8;
+  --acento: #38bdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 16px 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.tarjeta {
+  background: var(--tarjeta);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.tarjeta h2 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.aviso {
+  border-left: 4px solid var(--acento);
+}
+
+.aviso p {
+  margin: 0;
+}
+
+#mensaje-estado {
+  margin: 0 0 12px;
+  color: var(--suave);
+  font-size: 0.95rem;
+}
+
+video {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #000;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.aviso-permiso {
+  background: #0f172a;
+  border: 1px solid var(--acento);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.aviso-permiso h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.aviso-permiso p {
+  margin: 0 0 8px;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+button {
+  flex: 1 1 auto;
+  padding: 12px 14px;
+  font: inherit;
+  font-weight: 600;
+  color: #0f172a;
+  background: var(--acento);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.secundario {
+  color: var(--texto);
+  background: #334155;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+#btn-instalar {
+  flex: 0 0 auto;
+  padding: 8px 14px;
+}
